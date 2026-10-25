@@ -104,5 +104,29 @@
       </div>
       <div>
         <h4>Contact</h4>
-        <p><i clas
-... 
+        <p><i class="fas fa-phone"></i> <a href="tel:+2348129652113">0812 965 2113</a></p>
+        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/2348129652113" target="_blank">WhatsApp</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 BN Logistics. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/2348129652113" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+  <script>
+    const toggle = document.querySelector('.mobile-toggle');
+    const menu = document.querySelector('.nav-menu');
+    toggle.addEventListener('click', () => menu.classList.toggle('active'));
+    document.querySelectorAll('.dropdown > a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          link.parentElement.classList.toggle('open');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
