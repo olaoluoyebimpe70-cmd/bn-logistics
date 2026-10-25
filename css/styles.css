@@ -676,6 +676,12 @@ img {
     font-size: 1.1rem;
   }
   
+  .btn-outline {
+    margin-left: 0;
+    margin-top: 0.7rem;
+    display: inline-block;
+  }
+  
   .hero .btn {
     display: block;
     width: 100%;
