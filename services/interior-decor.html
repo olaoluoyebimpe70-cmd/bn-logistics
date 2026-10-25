@@ -100,5 +100,54 @@
       <h2 style="font-size: 1.8rem; margin-bottom: 0.8rem;">Ready to elevate your space?</h2>
       <p style="margin-bottom: 1.5rem; opacity: 0.9;">Let’s create a space you’ll love.</p>
       <a href="../contact.html" class="btn btn-primary">Book a Consultation</a>
-      <a href="https://wa.me/2348129652113" target="_blank" class="btn btn-outline">
-... 
+      <a href="https://wa.me/2348129652113" target="_blank" class="btn btn-outline"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <h4>BN Logistics</h4>
+        <p>Your Vision, Our Service</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <p><a href="../index.html">Home</a></p>
+        <p><a href="../about.html">About</a></p>
+        <p><a href="../contact.html">Contact</a></p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <p><a href="videography.html">Videography & Photography</a></p>
+        <p><a href="event-planning.html">Event Planning</a></p>
+        <p><a href="interior-decor.html">Interior Decor</a></p>
+        <p><a href="transport.html">Transport</a></p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="tel:+2348129652113">0812 965 2113</a></p>
+        <p><a href="https://wa.me/2348129652113" target="_blank">WhatsApp</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 BN Logistics. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/2348129652113" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+  <script>
+    const toggle = document.querySelector('.mobile-toggle');
+    const menu = document.querySelector('.nav-menu');
+    toggle.addEventListener('click', () => menu.classList.toggle('active'));
+    document.querySelectorAll('.dropdown > a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          link.parentElement.classList.toggle('open');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
